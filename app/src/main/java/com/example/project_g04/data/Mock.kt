@@ -38,6 +38,14 @@ object Mock {
                 length = "38 min",
                 completed = false,
                 urlVideo = "https://www.youtube.com/watch?v=W6NZfCO5SIk"
+            ),
+            Lesson(
+                number = 5,
+                name = "Functions and Scope",
+                description = "This lesson explains functions in JavaScript and the concept of scope.",
+                length = "45 min",
+                completed = false,
+                urlVideo = "https://www.youtube.com/watch?v=W6NZfCO5SIk"
             )
         )
     )

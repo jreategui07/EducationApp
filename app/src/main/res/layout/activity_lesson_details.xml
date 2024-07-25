@@ -8,48 +8,47 @@
     tools:context=".LessonDetails"
     android:padding="22dp">
 
-    <TextView
-        android:id="@+id/tvLessonTitle"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3. Variables and Conditionals"
-        android:textSize="24sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/tvLessonLength"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Length: 1 hour 20 min"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@id/tvLessonTitle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        <TextView
+            android:id="@+id/tvLessonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Variables and Conditionals"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp" />
 
-    <TextView
-        android:id="@+id/tvLessonDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/tvLessonLength"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp" />
+        <TextView
+            android:id="@+id/tvLessonLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Length: 1 hour 20 min"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
 
-    <Button
-        android:id="@+id/btnWatchLesson"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="WATCH LESSON"
-        app:layout_constraintTop_toBottomOf="@id/tvLessonDescription"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp" />
+        <TextView
+            android:id="@+id/tvLessonDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            android:textSize="16sp"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/btnWatchLesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WATCH LESSON"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnMarkLessonCompleted"
@@ -59,63 +58,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#F44336"
         android:layout_marginBottom="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-    <!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:id="@+id/main"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    tools:context=".LessonDetails"-->
-<!--    android:orientation="vertical"-->
-<!--    android:padding="22dp">-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/tvLessonTitle"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="3. Variables and Conditionals"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:textSize="24sp"-->
-<!--        android:layout_marginBottom="16dp" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/tvLessonLength"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Length: 1 hour 20 min"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:textSize="18sp"-->
-<!--        android:layout_marginBottom="16dp"/>-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/tvLessonDescription"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."-->
-<!--        android:layout_gravity="center"-->
-<!--        android:textSize="16sp"-->
-<!--        android:layout_marginBottom="24dp"/>-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btnWatchLesson"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="WATCH LESSON"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:layout_marginBottom="24dp"/>-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btnMarkLessonCompleted"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="MARK COMPLETE"-->
-<!--        android:layout_gravity="center"/>-->
-
-<!--</LinearLayout>-->

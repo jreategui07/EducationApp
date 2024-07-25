@@ -12,7 +12,7 @@ import com.example.project_g04.models.Lesson
 
 class LessonAdapter(
     private val context: Context,
-    private val course: Course,
+    private val lessons: MutableList<Lesson>
 ): RecyclerView.Adapter<LessonAdapter.ViewHolder>() {
 
     inner class ViewHolder(val binding: LessonRowLayoutBinding) : RecyclerView.ViewHolder (binding.root) {}
@@ -23,11 +23,11 @@ class LessonAdapter(
     }
 
     override fun getItemCount(): Int {
-        return course.lessons.size
+        return lessons.size
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val lesson: Lesson = course.lessons[position]
+        val lesson: Lesson = lessons[position]
 
         // TODO: check image with number of lesson
         holder.binding.tvLessonTitle.text = lesson.name

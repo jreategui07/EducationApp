@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/ivLessonId"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_question_mark"
+        app:tint="#03A9F4" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <TextView
+            android:id="@+id/tvLessonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvLessonLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Length: 12 min"
+            android:textSize="16sp"
+            android:textColor="#5A5555"
+            android:layout_marginTop="3dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivLessonCompleted"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:tint="#4CAF50" />
+
+</LinearLayout>

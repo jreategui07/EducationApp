@@ -5,5 +5,6 @@ class Lesson(
     val name: String,
     val description: String,
     val length: String,
-    val completed: Boolean = false
+    val completed: Boolean = false,
+    val urlVideo: String,
 )

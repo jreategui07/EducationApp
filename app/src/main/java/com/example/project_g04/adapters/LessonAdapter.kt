@@ -7,12 +7,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.project_g04.R
 import com.example.project_g04.databinding.LessonRowLayoutBinding
-import com.example.project_g04.models.Course
+import com.example.project_g04.interfaces.ClickDetectorInterface
 import com.example.project_g04.models.Lesson
 
 class LessonAdapter(
     private val context: Context,
-    private val lessons: MutableList<Lesson>
+    private val lessons: MutableList<Lesson>,
+    val clickInterface: ClickDetectorInterface
 ): RecyclerView.Adapter<LessonAdapter.ViewHolder>() {
 
     inner class ViewHolder(val binding: LessonRowLayoutBinding) : RecyclerView.ViewHolder (binding.root) {}
@@ -38,6 +39,10 @@ class LessonAdapter(
                 .into(holder.binding.ivLessonCompleted)
         } else {
             holder.binding.ivLessonCompleted.setImageDrawable(null)
+        }
+
+        holder.binding.parentLayout.setOnClickListener {
+            clickInterface.onRowClicked(position)
         }
     }
 }

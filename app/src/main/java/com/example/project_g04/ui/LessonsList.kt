@@ -46,6 +46,7 @@ class LessonsList : AppCompatActivity(), ClickDetectorInterface {
 
     override fun onRowClicked(position: Int) {
         val intent: Intent = Intent(this@LessonsList, LessonDetails::class.java)
+        intent.putExtra("EXTRA_LESSON", this.course.lessons[position])
         startActivity(intent)
     }
 }

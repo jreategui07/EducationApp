@@ -12,7 +12,7 @@ object Mock {
                 name = "Introduction to the Course",
                 description = "This lesson introduces the course and what you will learn.",
                 length = "12 min",
-                completed = true,
+                completed = false,
                 urlVideo = "https://www.youtube.com/watch?v=W6NZfCO5SIk"
             ),
             Lesson(
@@ -20,7 +20,7 @@ object Mock {
                 name = "What is JavaScript?",
                 description = "This lesson explains the basics of JavaScript and its uses.",
                 length = "30 min",
-                completed = true,
+                completed = false,
                 urlVideo = "https://www.youtube.com/watch?v=W6NZfCO5SIk"
             ),
             Lesson(
@@ -52,7 +52,7 @@ object Mock {
                 name = "Introduction to HTML",
                 description = "This lesson introduces HTML and its basic structure.",
                 length = "20 min",
-                completed = true,
+                completed = false,
                 urlVideo = "https://www.youtube.com/watch?v=W6NZfCO5SIk"
             ),
             Lesson(
@@ -86,23 +86,7 @@ object Mock {
                 length = "40 min",
                 completed = false,
                 urlVideo = "https://www.youtube.com/watch?v=W6NZfCO5SIk"
-            ),
-            Lesson(
-                number = 11,
-                name = "Event Handling in JavaScript",
-                description = "This lesson explains how to handle events in JavaScript.",
-                length = "30 min",
-                completed = false,
-                urlVideo = "https://www.youtube.com/watch?v=W6NZfCO5SIk"
-            ),
-            Lesson(
-                number = 12,
-                name = "AJAX and Fetch API",
-                description = "This lesson covers AJAX and the Fetch API for asynchronous operations in JavaScript.",
-                length = "1 hr",
-                completed = false,
-                urlVideo = "https://www.youtube.com/watch?v=W6NZfCO5SIk"
-            ),
+            )
         )
     )
 }

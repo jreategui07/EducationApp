@@ -30,7 +30,7 @@ class LessonAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val lesson: Lesson = lessons[position]
 
-        // TODO: check image with number of lesson
+        holder.binding.tvLessonId.text = lesson.number.toString()
         holder.binding.tvLessonTitle.text = lesson.name
         holder.binding.tvLessonLength.text = lesson.length
         if (lesson.completed) {

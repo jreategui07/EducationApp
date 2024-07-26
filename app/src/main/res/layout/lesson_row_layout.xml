@@ -8,19 +8,23 @@
     android:gravity="center"
     android:padding="12dp">
 
-    <ImageView
-        android:id="@+id/ivLessonId"
+    <TextView
+        android:id="@+id/tvLessonId"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:src="@drawable/ic_question_mark"
-        app:tint="#03A9F4" />
+        android:background="@drawable/circle_background"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:paddingLeft="8dp"
+        android:paddingLeft="10dp"
         android:paddingRight="8dp">
 
         <TextView

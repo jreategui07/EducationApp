@@ -28,7 +28,7 @@ class LessonDetails : AppCompatActivity() {
         this.sharedPreferencesManager = SharedPreferencesManager(this, Constants.SHARED_PREF_NAME)
 
         if (intent != null) {
-            this.lesson = intent.getSerializableExtra("EXTRA_LESSON") as Lesson
+            this.lesson = intent.getSerializableExtra(Constants.EXTRA_LESSON) as Lesson
             showLesson()
         }
 

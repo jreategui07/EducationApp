@@ -15,7 +15,7 @@
         android:background="@drawable/circle_background"
         android:gravity="center"
         android:text="1"
-        android:textColor="@android:color/white"
+        android:textColor="#03A9F4"
         android:textSize="18sp"
         android:textStyle="bold" />
 

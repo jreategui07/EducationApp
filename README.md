@@ -1,4 +1,4 @@
-# ToDo App
+# Education App
 
 <table>
   <tr>
